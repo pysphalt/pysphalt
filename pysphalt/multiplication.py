@@ -1,4 +1,7 @@
-class Multiplication:
+from pydantic import BaseModel
+
+
+class Multiplication(BaseModel):
     """
     Instantiate a multiplication operation.
     Numbers will be multiplied by the given multiplier.
@@ -7,10 +10,9 @@ class Multiplication:
     :type multiplier: int
     """
 
-    def __init__(self, multiplier):
-        self.multiplier = multiplier
+    multiplier: int
 
-    def multiply(self, number):
+    def multiply(self, number: int) -> int:
         """
         Multiply a given number by the multiplier.
 
