@@ -47,3 +47,10 @@ pre-commit
 ⚠️ Whenever you work on this codebase, **remember to activate the conda environment:**
 
 ## Building Docs
+
+```shell
+cd docs
+make html
+```
+
+You can access the generated docs on `docs/build/html/index.html`

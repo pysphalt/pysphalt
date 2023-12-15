@@ -25,7 +25,12 @@ release = "0.1.1"
 
 extensions = []
 
-extensions = ["recommonmark", "sphinx.ext.autodoc", "sphinx.ext.viewcode"]
+extensions = [
+    "recommonmark",
+    "sphinx.ext.autodoc",
+    "sphinx.ext.viewcode",
+    "sphinxcontrib.autodoc_pydantic",
+]
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
