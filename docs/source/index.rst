@@ -11,6 +11,7 @@ Welcome to Pysphalt's documentation!
    :caption: Python API:
 
    api/multiplication
+   api/models
 
 Indices and tables
 ==================
