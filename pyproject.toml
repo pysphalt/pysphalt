@@ -1,3 +1,39 @@
 [build-system]
-requires = ["setuptools>=42"]
+requires = ["setuptools>=61.2"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "pysphalt"
+version = "0.1.12"
+authors = [{name = "Rodrigo Castanon", email = "rodrigo.castanon@poli.ufrj.br"}]
+description = "Library of Descriptive and Predictive Models for Brazilian Asphalt Materials Data"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+license = {file = "LICENSE"}
+dynamic = ["readme"]
+requires-python = ">=3.10"
+
+[project.urls]
+Homepage = "https://pysphalt.readthedocs.io"
+Documentation = "https://pysphalt.readthedocs.io"
+Repository = "https://github.com/pysphalt/pysphalt"
+Issues= "https://github.com/pysphalt/pysphalt/issues"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [
+    "examples*",
+    "tools*",
+    "docs*",
+    "tests*",
+]
+namespaces = false
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md", "LICENSE.txt"], content-type = "text/markdown"}
