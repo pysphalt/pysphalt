@@ -1,3 +1,4 @@
+[![Documentation Status](https://readthedocs.org/projects/pysphalt/badge/?version=latest)](https://pysphalt.readthedocs.io/en/latest/?badge=latest)
 <h1 align="center">Pysphalt</h1>
 
 Library of machine learning models for Brazilian asphalt material data.
