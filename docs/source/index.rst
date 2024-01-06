@@ -10,7 +10,6 @@ Welcome to Pysphalt's documentation!
    :maxdepth: 1
    :caption: Python API:
 
-   api/multiplication
    api/models
 
 Indices and tables
