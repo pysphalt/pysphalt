@@ -56,4 +56,5 @@ class AsphaltModulusPredictor:
         >>> inputs = AsphaltMixInputs(frequency=1.0, binder_dynamic_shear_modulus=500, ...)
         >>> y_pred = predictor.predict([inputs])
         """
+        hello = []
         return self._loaded_model.predict(X)  # type: ignore[attr-defined]
