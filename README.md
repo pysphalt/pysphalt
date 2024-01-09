@@ -1,4 +1,7 @@
 [![Documentation Status](https://readthedocs.org/projects/pysphalt/badge/?version=latest)](https://pysphalt.readthedocs.io/en/latest/?badge=latest)
+[![pypi](https://img.shields.io/pypi/v/pysphalt.svg)](https://pypi.python.org/pypi/pysphalt)
+[![versions](https://img.shields.io/pypi/pyversions/pysphalt.svg)](https://github.com/pysphalt/pysphalt)
+[![license](https://img.shields.io/github/license/pypysphalt/pysphalt.svg)](https://github.com/pysphalt/pysphalt/blob/main/LICENSE)
 <h1 align="center">Pysphalt</h1>
 
 Library of machine learning models for Brazilian asphalt material data.
