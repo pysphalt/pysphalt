@@ -10,6 +10,7 @@ Library of machine learning models for Brazilian asphalt material data.
 -   [Local Quickstart](#local-quickstart)
     -   [1. Install dependencies](#1-install-dependencies)
 -   [Building Docs](#building-docs)
+-   [Deploy to PyPi](#deploy-to-pypi)
 
 ## Installation
 
@@ -50,6 +51,10 @@ pre-commit
 
 ⚠️ Whenever you work on this codebase, **remember to activate the conda environment:**
 
+```shell
+conda activate pysphalt
+```
+
 ## Building Docs
 
 ```shell
@@ -58,3 +63,9 @@ make html
 ```
 
 You can access the generated docs on `docs/build/html/index.html`
+
+
+## Deploy to PyPi
+
+Deploys to PyPi are managed automatically by Github Actions. To upload a new version of the library, just bump the version field on `pyproject.toml` and push a new tag to `main`.
+The Action to publish a new version to PyPi will be triggered by the pushing the tag.
