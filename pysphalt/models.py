@@ -1,6 +1,7 @@
 from typing import List
 from pysphalt.schemas import AsphaltMixInputs
 import pickle
+import os
 
 
 class AsphaltModulusPredictor:
@@ -22,7 +23,9 @@ class AsphaltModulusPredictor:
     _loaded_model: object
 
     def __init__(self):
-        with open("pysphalt/model.pkl", "rb") as model_file:
+        this_dir = os.path.dirname(os.path.abspath(__file__))
+        pickle_path = os.path.join(this_dir, "model.pkl")
+        with open(pickle_path, "rb") as model_file:
             self._loaded_model = pickle.load(model_file)
 
     def predict(self, X: List[AsphaltMixInputs]) -> float:
