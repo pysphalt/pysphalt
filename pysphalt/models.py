@@ -3,6 +3,10 @@ from pysphalt.schemas import AsphaltMixInputs
 import pickle
 import os
 
+PICKLE_MODELS_DIR = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), "pickle_models"
+)
+
 
 class AsphaltModulusPredictor:
     """
@@ -23,8 +27,8 @@ class AsphaltModulusPredictor:
     _loaded_model: object
 
     def __init__(self):
-        this_dir = os.path.dirname(os.path.abspath(__file__))
-        pickle_path = os.path.join(this_dir, "model.pkl")
+        # this_dir = os.path.dirname(os.path.abspath(__file__))
+        pickle_path = os.path.join(PICKLE_MODELS_DIR, "asphalt_modulus_predictor.pkl")
         with open(pickle_path, "rb") as model_file:
             self._loaded_model = pickle.load(model_file)
 
