@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pysphalt"
-version = "0.1.17"
+version = "0.1.18"
 authors = [{name = "Rodrigo Castanon", email = "rodrigo.castanon@poli.ufrj.br"}]
 description = "Library of Descriptive and Predictive Models for Brazilian Asphalt Materials Data"
 classifiers = [
