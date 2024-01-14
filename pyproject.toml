@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pysphalt"
-version = "0.1.18"
+version = "0.1.19"
 authors = [{name = "Rodrigo Castanon", email = "rodrigo.castanon@poli.ufrj.br"}]
 description = "Library of Descriptive and Predictive Models for Brazilian Asphalt Materials Data"
 classifiers = [
@@ -23,6 +23,10 @@ Homepage = "https://pysphalt.readthedocs.io"
 Documentation = "https://pysphalt.readthedocs.io"
 Repository = "https://github.com/pysphalt/pysphalt"
 Issues= "https://github.com/pysphalt/pysphalt/issues"
+
+[tool.setuptools]
+include-package-data = false
+package-data = { pysphalt = ["pickle_models/*"]}
 
 [tool.setuptools.packages.find]
 exclude = [
