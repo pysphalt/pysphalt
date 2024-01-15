@@ -20,8 +20,14 @@ class AsphaltModulusPredictor:
         predict(inputs): Accepts input parameters of the asphalt mixture and returns the predicted dynamic modulus.
 
     Example:
+        >>> from pysphalt.models import AsphaltModulusPredictor
         >>> predictor = AsphaltModulusPredictor()
-        >>> modulus = predictor.predict([ ... ])
+        >>> sample_inputs = [
+            [10.0, 300.0, 75.0, 15.0, 60.0, 40.0, 25.0, 5.0, 12.0],
+            [12.0, 350.0, 70.0, 10.0, 65.0, 35.0, 30.0, 4.5, 14.0],
+            [11.0, 320.0, 80.0, 20.0, 55.0, 45.0, 22.0, 6.0, 11.0],
+        ]
+        >>> modulus = predictor.predict(sample_inputs)
     """
 
     _loaded_model: object

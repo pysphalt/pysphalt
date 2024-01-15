@@ -6,15 +6,34 @@
 Welcome to Pysphalt's documentation!
 ===========================================
 
+Pysphalt is a library of machine learning models for Brazilian asphalt material data.
+
+Installation
+------------
+
+Install the ``pysphalt`` package (or add it to your ``requirements.txt`` file):
+
+.. code:: console
+
+    $ pip install sphinx_rtd_theme
+
+
+Usage
+-----
+
+Import one of the models from the ``pysphalt.models`` module, for example the :class:`.AsphaltModulusPredictor` model:
+
+.. code:: python
+
+   from pysphalt.models import AsphaltModulusPredictor
+
+   predictor = AsphaltModulusPredictor()
+
+   predictor.predict([[<your sample row 1>], [<your sample row 2>], ...])
+
+
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Python API:
 
    api/models
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
